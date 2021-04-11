@@ -1,0 +1,160 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background-color: lightgray;
+}
+
+
+.pseudo-classes-styling{
+	margin: 123px 0 75px 255px;
+	max-width: 650px;
+	color:#273D46;
+	padding-left: 37px;
+	line-height: 30px;
+}
+.pseudo-classes-styling li{
+	padding-left: 35px;
+}
+.pseudo-classes-styling li::before{
+	content:url('../img/icons/checkIcon.png');
+}
+.pseudo-classes-styling li:first-child{
+	text-decoration: line-through;
+	font-size: 19px;
+}
+.pseudo-classes-styling li:nth-child(2){
+	font-weight: 700;
+	font-size: 20px;
+}
+.pseudo-classes-styling li:nth-child(3){
+	font-style: italic;
+	font-size: 19px;
+}
+.pseudo-classes-styling li:last-child{
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+
+.pseudo-classes-hover-styling{
+	font-size: 19px;
+	line-height: 31px;
+	margin: 0 0 137px 290px;
+	max-width: 547px;
+}
+.pseudo-classes-hover-styling li{
+	padding-left: 35px;
+}
+.pseudo-classes-hover-styling li::before{
+	content:url('../img/icons/checkIcon.png');
+}
+.pseudo-classes-hover-styling li:nth-child(2):hover::before{
+	content:url('../img/icons/checkIconred.png');
+}
+.pseudo-classes-hover-styling li:nth-child(2):hover{
+	color:red;
+}
+
+.buttons {
+	color: white;
+	text-transform: uppercase;
+	margin-left: 315px;
+	margin-bottom: 125px;
+	font-size: 14px;
+}
+.buttons a, .buttons a:active, .buttons a:visited{
+	color: white;
+}
+.buttons li{
+	display: inline-block;
+	width: 199px;
+	height: 44px;
+	border-radius: 22px;
+	padding-top: 15px;
+	padding-left: 44px;
+	margin-right: 97px
+}
+.buttons__native-style,.buttons__hover-style,.buttons__active-style{
+	background: rgb(128,183,179);
+	box-shadow: 2px 2px 5px rgb(128,183,179);
+}
+.buttons__hover-style:hover,.buttons__active-style:hover{
+	background: rgb(58,88,86);
+	box-shadow: 2px 2px 10px rgb(128,183,179);
+}
+.buttons__active-style:active{
+	background: rgb(129,129,129);
+}
+
+
+
+.forms__inputs {
+	margin-left: 292px;
+}
+.forms__inputs__native-style, .forms__inputs__focus-style{
+	width: 292px;
+	height: 50px;
+	border: 1px solid darkgray;
+	background-color: white;
+}
+.forms__inputs__native-style{
+	margin-right: 80px;
+}
+.forms__inputs__focus-style:focus{
+	display: inline-block;
+	box-shadow: 0 4px 4px 0 lightblue, 0 0 4px 4px lightblue;
+}
+
+
+.text{
+	margin: 0 0 0 291px;
+	max-width: 765px;
+	font-size: 18px;
+}
+.text p:first-child{
+	margin: 118px 0 43px 0;
+}
+.text p:first-child::first-line{
+	color: red;
+}
+.text p:last-child::first-letter{
+	color: red;
+}
